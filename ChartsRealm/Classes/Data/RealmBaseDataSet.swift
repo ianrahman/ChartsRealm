@@ -331,7 +331,7 @@ open class RealmBaseDataSet: ChartBaseDataSet
         {
             buildCache()
         }
-        return _cache[i]
+        return _cache.count > 0 ? _cache[i] : nil
     }
     
     /// - returns: The first Entry object found at the given x-value with binary search.
